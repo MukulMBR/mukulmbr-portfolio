@@ -183,7 +183,7 @@ function Nav() {
     { href: "#expertise", id: "expertise", label: "Expertise" },
     { href: "#timeline", id: "timeline", label: "Journey" },
     { href: "#services", id: "services", label: "Services" },
-    { href: "https://tools.mukulmbr.in", id: "tools", label: "Tools ⚡" },
+    { href: "https://tools.mukulmbr.in", id: "tools", label: "Motion Hub 📡" },
     { href: "#contact", id: "contact", label: "Contact" },
   ];
 
