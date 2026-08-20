@@ -34,6 +34,8 @@ import {
   MessageCircle,
   Phone,
   Menu,
+  Radio,
+  Mic,
 } from "lucide-react";
 import { trackEvent, initScrollDepth } from "@/lib/analytics";
 
