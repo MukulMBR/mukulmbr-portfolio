@@ -473,6 +473,63 @@ function ParticleCanvas() {
   return <canvas ref={canvasRef} className="pointer-events-none absolute inset-0 z-0 h-[500px] w-full" />;
 }
 
+function GitHubActivityWidget() {
+  const [events, setEvents] = useState<Array<{ id: string; repo: string; message: string; time: string }>>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("https://api.github.com/users/MukulMBR/events?per_page=5")
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data)) {
+          const pushEvents = data
+            .filter((e: any) => e.type === "PushEvent")
+            .slice(0, 4)
+            .map((e: any) => ({
+              id: e.id,
+              repo: e.repo?.name ? e.repo.name.replace("MukulMBR/", "") : "mukulmbr-portfolio",
+              message: e.payload?.commits?.[0]?.message || "Pushed code update",
+              time: new Date(e.created_at).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+            }));
+          setEvents(pushEvents);
+        }
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  return (
+    <div className="mt-8 rounded-2xl border border-border glass p-5 space-y-3">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2 text-xs font-semibold text-foreground">
+          <Code2 className="h-4 w-4 text-emerald-400" /> Live GitHub Activity Stream
+        </div>
+        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-foreground/10 text-muted-foreground">
+          api.github.com/MukulMBR
+        </span>
+      </div>
+
+      {loading ? (
+        <div className="text-xs text-muted-foreground animate-pulse py-2">Loading live GitHub commit feed...</div>
+      ) : events.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {events.map((e) => (
+            <div key={e.id} className="p-3 rounded-xl bg-foreground/5 border border-border/50 space-y-1 text-xs">
+              <div className="flex items-center justify-between text-[11px] font-bold text-foreground">
+                <span className="truncate max-w-[140px] text-emerald-400">{e.repo}</span>
+                <span className="text-[9px] text-muted-foreground font-mono">{e.time}</span>
+              </div>
+              <p className="text-[11px] text-muted-foreground truncate">{e.message}</p>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="text-xs text-muted-foreground py-1">Recent commit streams active across GitHub repositories.</div>
+      )}
+    </div>
+  );
+}
+
 function Hero() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
@@ -558,6 +615,11 @@ function Hero() {
               ))}
             </div>
           </Reveal>
+          {/* Live GitHub Activity Stream (Public API Integration) */}
+          <Reveal delay={0.48}>
+            <GitHubActivityWidget />
+          </Reveal>
+
           {/* Live Motion Hub Studio Sandbox */}
           <Reveal delay={0.5}>
             <div className="mt-12 rounded-3xl border border-emerald-500/30 bg-slate-900/80 p-6 md:p-8 backdrop-blur-xl shadow-2xl space-y-6">
