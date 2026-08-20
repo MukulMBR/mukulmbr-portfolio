@@ -1,8 +1,22 @@
-# Mukul Bushi Reddy M — Personal Portfolio
+# Mukul Bushi Reddy M — Personal Developer Portfolio
 
 Official repository for **[mukulmbr.in](https://mukulmbr.in)**.
 
-This repository contains the source code for my personal developer portfolio, featuring my background, experience, projects, skills, case studies, and contact details.
+Personal developer portfolio featuring background, project case studies, interactive 3D particle hero canvas, live GitHub commit stream, and MBR Motion Hub studio sandbox.
+
+---
+
+## ✨ Features & Integrations
+
+- **Interactive 3D Particle Hero Canvas**: Cursor-reactive particle field (`prefers-reduced-motion` compliant).
+- **Live GitHub Activity Stream**: Real-time commit feed via `api.github.com/users/MukulMBR/events`.
+- **Motion Hub Live Sandbox**: Interactive test drive card linking directly to `https://tools.mukulmbr.in`.
+- **Google Analytics 4 & SEO**: GA4 (`G-H12WX41S89`), Schema.org JSON-LD structured data, and `/llms.txt` context.
+
+---
+
+## 🌐 Public APIs Reference Directory
+Curated API reference: **[public-apis/public-apis](https://github.com/public-apis/public-apis)**
 
 ---
 
@@ -13,46 +27,6 @@ This repository contains the source code for my personal developer portfolio, fe
 - **Styling**: Tailwind CSS v4, Framer Motion
 - **Icons & UI**: Lucide React, shadcn/ui primitives
 - **Build Tool**: Vite 7
-
----
-
-## 🚀 Getting Started
-
-### Local Development
-
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-2. Start development server:
-   ```bash
-   npm run dev
-   ```
-
-3. Open `http://localhost:5173` in your browser.
-
-### Production Build
-
-```bash
-npm run build
-```
-
-The output bundle will be generated in the `dist` directory, ready for deployment.
-
----
-
-## 🌐 Deployment & Custom Domain (`mukulmbr.in`)
-
-This repository is configured for zero-config deployment to:
-- **Cloudflare Pages**
-- **Vercel**
-- **GitHub Pages** / Netlify
-
-### Linking `mukulmbr.in`:
-1. Push this repository to GitHub as `MukulMBR/mukulmbr-portfolio`.
-2. Connect `MukulMBR/mukulmbr-portfolio` to Cloudflare Pages / Vercel.
-3. Add custom domain `mukulmbr.in` with automatic SSL (HTTPS).
 
 ---
 
