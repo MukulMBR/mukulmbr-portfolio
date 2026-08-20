@@ -1,20 +1,25 @@
-# Mukul — Frontend Developer Portfolio
+# Mukul Bushi Reddy M — Personal Portfolio & Technical Context
 
-> Portfolio of Mukul Bushi Reddy M (Mukul), a Frontend Developer specializing in Angular, TypeScript, React, Flutter, and AI-integrated web products.
+> Official Developer Portfolio: https://mukulmbr.in
+> Online Tools Ecosystem: https://tools.mukulmbr.in
+> GitHub: https://github.com/MukulMBR
+> LinkedIn: https://www.linkedin.com/in/mukulmbr
 
-Mukul builds responsive, user-centric digital products end-to-end — from concept to production. Focus areas: Angular, TypeScript, React, Flutter, Spring Boot, Firebase, Node.js, and AI integration (Gemini API).
+## About Mukul Bushi Reddy M
+Mukul Bushi Reddy M is a Frontend Developer specializing in Angular, TypeScript, React, Spring Boot, AI Application Integration, and Modern Motion UI/UX.
 
-## Pages
+## Core Technical Skills
+- **Frontend Frameworks**: Angular, TypeScript, React 19, RxJS, Next.js, Vite
+- **UI & Motion Design**: Tailwind CSS v4, Framer Motion, GSAP, Glassmorphism, 3D CSS Transforms, shadcn/ui
+- **Backend & DevOps**: Spring Boot, REST APIs, Kotlin, SQL, Firebase, Docker, Cloudflare Pages, Git
+- **AI & Telemetry Integration**: Gemini Live WebSocket API, Ollama, Client-Side Media Processing, Live GPS Telemetry Systems
 
-- [Home](/): Hero, work, skills, evolution timeline, and contact for Mukul.
-- [Engineering Case Studies](/work): Technical case studies — architecture, performance, and AI integration behind featured products.
-
-## Case Studies
-
-- [Emergent](/work/emergent): AI planning engine with typed Gemini output, streaming UI, and Firebase persistence.
-- [Smart Posture](/work/smart-posture): Flutter app with on-device sensor pipeline, Firebase Realtime DB sync, and animated feedback.
-- [Telegram Gemini Bot](/work/telegram-gemini-bot): Webhook-driven Node service with rolling-summary session memory and Gemini intent routing.
-
-## Optional
-
-- [Sitemap](/sitemap.xml): All indexable URLs.
+## Online Tools Suite (https://tools.mukulmbr.in)
+- Live GPS Telemetry Radar
+- Universal Media Downloader
+- Prompt Video Editor & Video Trimmer Studio
+- Video Enhancer & AI Upscaler (RealESRGAN / GFPGAN)
+- Audio Trimmer, Extractor & TTS Speech Studio
+- AI Subtitle Generator & Channel Automation
+- GIF Studio, Thumbnail Generator & Screen Recorder
+- Watermark Removal & Video Compressor Studio
