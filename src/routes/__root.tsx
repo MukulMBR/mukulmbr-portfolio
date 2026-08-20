@@ -105,6 +105,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       { children: themeInitScript },
+      { src: "https://www.googletagmanager.com/gtag/js?id=G-H12WX41S89", async: true },
+      { children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-H12WX41S89');` },
       { type: "application/ld+json", children: JSON.stringify(personSchema) },
       { type: "application/ld+json", children: JSON.stringify(websiteSchema) },
     ],
