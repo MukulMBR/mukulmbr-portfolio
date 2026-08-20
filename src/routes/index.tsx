@@ -558,6 +558,83 @@ function Hero() {
               ))}
             </div>
           </Reveal>
+          {/* Live Motion Hub Studio Sandbox */}
+          <Reveal delay={0.5}>
+            <div className="mt-12 rounded-3xl border border-emerald-500/30 bg-slate-900/80 p-6 md:p-8 backdrop-blur-xl shadow-2xl space-y-6">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-white/10 pb-4">
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-500 flex items-center justify-center text-slate-950 font-bold shadow-lg shadow-emerald-500/20">
+                    <Radio className="h-5 w-5 animate-pulse" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-extrabold text-white flex items-center gap-2">
+                      MBR Motion Hub — Interactive Studio Sandbox
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                        18 Engines Live
+                      </span>
+                    </h3>
+                    <p className="text-xs text-slate-400">Test drive browser-native media engines built by Mukul M.</p>
+                  </div>
+                </div>
+
+                <a
+                  href="https://tools.mukulmbr.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-950 bg-gradient-to-r from-emerald-400 to-teal-400 hover:from-emerald-300 hover:to-teal-300 px-4 py-2.5 rounded-xl shadow-lg shadow-emerald-500/20 transition-all scale-100 hover:scale-105 whitespace-nowrap"
+                >
+                  <span>Launch Motion Hub</span>
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <a
+                  href="https://tools.mukulmbr.in/?tool=bus-tracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-emerald-500/40 transition-all group"
+                >
+                  <Radio className="h-5 w-5 text-emerald-400 mb-2 group-hover:scale-110 transition-transform" />
+                  <h4 className="text-xs font-bold text-white">Live GPS Telemetry Radar</h4>
+                  <p className="text-[10px] text-slate-400 mt-1">3D spatial Leaflet tracking & State RTC plates.</p>
+                </a>
+
+                <a
+                  href="https://tools.mukulmbr.in/?tool=downloader"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-emerald-500/40 transition-all group"
+                >
+                  <Download className="h-5 w-5 text-cyan-400 mb-2 group-hover:scale-110 transition-transform" />
+                  <h4 className="text-xs font-bold text-white">Universal Media Downloader</h4>
+                  <p className="text-[10px] text-slate-400 mt-1">Instagram Reels, YouTube HD & TikTok extraction.</p>
+                </a>
+
+                <a
+                  href="https://tools.mukulmbr.in/?tool=tts-studio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-emerald-500/40 transition-all group"
+                >
+                  <Mic className="h-5 w-5 text-teal-400 mb-2 group-hover:scale-110 transition-transform" />
+                  <h4 className="text-xs font-bold text-white">TTS Speech Studio</h4>
+                  <p className="text-[10px] text-slate-400 mt-1">Browser native speech synthesis & voice controls.</p>
+                </a>
+
+                <a
+                  href="https://tools.mukulmbr.in/?tool=subtitle-generator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-emerald-500/40 transition-all group"
+                >
+                  <Sparkles className="h-5 w-5 text-purple-400 mb-2 group-hover:scale-110 transition-transform" />
+                  <h4 className="text-xs font-bold text-white">AI Subtitle Generator</h4>
+                  <p className="text-[10px] text-slate-400 mt-1">Automated speech-to-text SRT captioning.</p>
+                </a>
+              </div>
+            </div>
+          </Reveal>
         </motion.div>
       </Section>
     </div>
