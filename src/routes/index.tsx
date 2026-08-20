@@ -54,7 +54,7 @@ export const Route = createFileRoute("/")({
         content:
           "Frontend Developer specializing in Angular, TypeScript, and modern web technologies. Transforming ideas into responsive, user-centric digital products.",
       },
-      { property: "og:url", content: "https://mukulmbr.lovable.app/" },
+      { property: "og:url", content: "https://mukulmbr.in/" },
       { property: "og:image", content: OG_IMAGE },
       { property: "og:image:alt", content: "Mukul — Frontend Developer Portfolio" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -66,7 +66,7 @@ export const Route = createFileRoute("/")({
       },
       { name: "twitter:image", content: OG_IMAGE },
     ],
-    links: [{ rel: "canonical", href: "https://mukulmbr.lovable.app/" }],
+    links: [{ rel: "canonical", href: "https://mukulmbr.in/" }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(projectsJsonLd) },
     ],
@@ -183,6 +183,7 @@ function Nav() {
     { href: "#expertise", id: "expertise", label: "Expertise" },
     { href: "#timeline", id: "timeline", label: "Journey" },
     { href: "#services", id: "services", label: "Services" },
+    { href: "https://tools.mukulmbr.in", id: "tools", label: "Tools ⚡" },
     { href: "#contact", id: "contact", label: "Contact" },
   ];
 
