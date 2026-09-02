@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { caseStudies } from "../lib/case-studies";
 
-const SITE_URL = "https://mukulmbr.lovable.app";
+const SITE_URL = "https://mukulmbr.in";
 
 export const Route = createFileRoute("/work/")({
   head: () => ({

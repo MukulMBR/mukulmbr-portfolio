@@ -632,69 +632,118 @@ function Hero() {
                   </div>
                   <div>
                     <h3 className="text-lg font-extrabold text-white flex items-center gap-2">
-                      MBR Motion Hub — Interactive Studio Sandbox
+                      MBR Motion Hub — Spatial Studio Sandbox
                       <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                        18 Engines Live
+                        23 Engines Live
                       </span>
                     </h3>
-                    <p className="text-xs text-slate-400">Test drive browser-native media engines built by Mukul M.</p>
+                    <p className="text-xs text-slate-400">23 browser-native multimedia engines running 100% in client-side RAM with zero server compute.</p>
                   </div>
                 </div>
 
-                <a
-                  href="https://tools.mukulmbr.in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-950 bg-gradient-to-r from-emerald-400 to-teal-400 hover:from-emerald-300 hover:to-teal-300 px-4 py-2.5 rounded-xl shadow-lg shadow-emerald-500/20 transition-all scale-100 hover:scale-105 whitespace-nowrap"
-                >
-                  <span>Launch Motion Hub</span>
-                  <ArrowUpRight className="h-4 w-4" />
-                </a>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <a
+                    href="/work/mbr-motion-hub"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 px-3.5 py-2.5 rounded-xl transition-all"
+                  >
+                    <span>Read Case Study</span>
+                    <ChevronRight className="h-3.5 w-3.5" />
+                  </a>
+                  <a
+                    href="https://tools.mukulmbr.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-950 bg-gradient-to-r from-emerald-400 to-teal-400 hover:from-emerald-300 hover:to-teal-300 px-4 py-2.5 rounded-xl shadow-lg shadow-emerald-500/20 transition-all scale-100 hover:scale-105 whitespace-nowrap"
+                  >
+                    <span>Launch 23 Engines</span>
+                    <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
                 <a
-                  href="https://tools.mukulmbr.in/?tool=bus-tracker"
+                  href="https://tools.mukulmbr.in/?tool=vocal-remover"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-emerald-500/40 transition-all group"
                 >
-                  <Radio className="h-5 w-5 text-emerald-400 mb-2 group-hover:scale-110 transition-transform" />
+                  <div className="flex items-center justify-between mb-2">
+                    <Mic className="h-5 w-5 text-emerald-400 group-hover:scale-110 transition-transform" />
+                    <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300">Tool #21</span>
+                  </div>
+                  <h4 className="text-xs font-bold text-white">AI Vocal & Music Stem Isolator</h4>
+                  <p className="text-[10px] text-slate-400 mt-1">Mid-side phase cancellation DSP for Acapella & Karaoke in browser RAM.</p>
+                </a>
+
+                <a
+                  href="https://tools.mukulmbr.in/?tool=spatial-audio-8d"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-cyan-500/40 transition-all group"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <Radio className="h-5 w-5 text-cyan-400 group-hover:scale-110 transition-transform" />
+                    <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300">Tool #22</span>
+                  </div>
+                  <h4 className="text-xs font-bold text-white">8D Spatial Audio Studio</h4>
+                  <p className="text-[10px] text-slate-400 mt-1">360° HRTF binaural panning + algorithmic convolution reverb radar.</p>
+                </a>
+
+                <a
+                  href="https://tools.mukulmbr.in/?tool=safe-zone-simulator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-purple-500/40 transition-all group"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <Smartphone className="h-5 w-5 text-purple-400 group-hover:scale-110 transition-transform" />
+                    <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-300">Tool #20</span>
+                  </div>
+                  <h4 className="text-xs font-bold text-white">Shorts & Reels Safe-Zone 3D</h4>
+                  <p className="text-[10px] text-slate-400 mt-1">Test 9:16 vertical videos across 50+ 3D flagship smartphone frames.</p>
+                </a>
+
+                <a
+                  href="https://tools.mukulmbr.in/?tool=bus-tracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-teal-500/40 transition-all group"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <Globe className="h-5 w-5 text-teal-400 group-hover:scale-110 transition-transform" />
+                    <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-teal-500/10 text-teal-300">Radar #1</span>
+                  </div>
                   <h4 className="text-xs font-bold text-white">Live GPS Telemetry Radar</h4>
-                  <p className="text-[10px] text-slate-400 mt-1">3D spatial Leaflet tracking & State RTC plates.</p>
+                  <p className="text-[10px] text-slate-400 mt-1">Interactive transit telemetry, speedometers & live weather radar.</p>
                 </a>
 
                 <a
                   href="https://tools.mukulmbr.in/?tool=downloader"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-emerald-500/40 transition-all group"
+                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-blue-500/40 transition-all group"
                 >
-                  <Download className="h-5 w-5 text-cyan-400 mb-2 group-hover:scale-110 transition-transform" />
+                  <div className="flex items-center justify-between mb-2">
+                    <Download className="h-5 w-5 text-blue-400 group-hover:scale-110 transition-transform" />
+                    <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-300">Utility #19</span>
+                  </div>
                   <h4 className="text-xs font-bold text-white">Universal Media Downloader</h4>
-                  <p className="text-[10px] text-slate-400 mt-1">Instagram Reels, YouTube HD & TikTok extraction.</p>
+                  <p className="text-[10px] text-slate-400 mt-1">Instagram Reels, TikTok, and YouTube media extraction engine.</p>
                 </a>
 
                 <a
-                  href="https://tools.mukulmbr.in/?tool=tts-studio"
+                  href="https://tools.mukulmbr.in/?tool=audiogram-generator"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-emerald-500/40 transition-all group"
+                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-pink-500/40 transition-all group"
                 >
-                  <Mic className="h-5 w-5 text-teal-400 mb-2 group-hover:scale-110 transition-transform" />
-                  <h4 className="text-xs font-bold text-white">TTS Speech Studio</h4>
-                  <p className="text-[10px] text-slate-400 mt-1">Browser native speech synthesis & voice controls.</p>
-                </a>
-
-                <a
-                  href="https://tools.mukulmbr.in/?tool=subtitle-generator"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-4 rounded-2xl border border-white/10 bg-slate-950/60 hover:border-emerald-500/40 transition-all group"
-                >
-                  <Sparkles className="h-5 w-5 text-purple-400 mb-2 group-hover:scale-110 transition-transform" />
-                  <h4 className="text-xs font-bold text-white">AI Subtitle Generator</h4>
-                  <p className="text-[10px] text-slate-400 mt-1">Automated speech-to-text SRT captioning.</p>
+                  <div className="flex items-center justify-between mb-2">
+                    <Sparkles className="h-5 w-5 text-pink-400 group-hover:scale-110 transition-transform" />
+                    <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-pink-500/10 text-pink-300">Tool #23</span>
+                  </div>
+                  <h4 className="text-xs font-bold text-white">Audiogram Waveform Video Studio</h4>
+                  <p className="text-[10px] text-slate-400 mt-1">60 FPS in-browser video renderer for podcasts & social voice notes.</p>
                 </a>
               </div>
             </div>
@@ -1001,7 +1050,7 @@ const projectsJsonLd = {
       ...(p.codeUrl ? { codeRepository: p.codeUrl, programmingLanguage: p.stack } : {}),
       ...(p.liveUrl ? { url: p.liveUrl } : {}),
       ...(p.stack ? { keywords: p.stack.join(", ") } : {}),
-      author: { "@type": "Person", name: "Mukul Bushi Reddy M", url: "https://mukulmbr.lovable.app" },
+      author: { "@type": "Person", name: "Mukul Bushi Reddy M", url: "https://mukulmbr.in" },
     },
   })),
 };

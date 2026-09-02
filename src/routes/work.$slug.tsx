@@ -4,7 +4,7 @@ import { Check, Copy, ExternalLink } from "lucide-react";
 import { caseStudies, getCaseStudy, type CaseStudy } from "../lib/case-studies";
 
 
-const SITE_URL = "https://mukulmbr.lovable.app";
+const SITE_URL = "https://mukulmbr.in";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }): { study: CaseStudy } => {
@@ -164,7 +164,20 @@ function CaseStudyPage() {
             {study.summary}
           </p>
 
-          <ShareTools url={pageUrl} />
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            {study.liveUrl && (
+              <a
+                href={study.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-400 to-teal-400 hover:from-emerald-300 hover:to-teal-300 px-5 py-2 text-xs font-bold text-slate-950 shadow-md shadow-emerald-500/20 transition-all hover:scale-105"
+              >
+                <span>Launch Live Application</span>
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
+            )}
+            <ShareTools url={pageUrl} />
+          </div>
 
 
           <dl className="mt-8 grid grid-cols-2 gap-4 border-y border-border py-5 text-sm md:grid-cols-3">

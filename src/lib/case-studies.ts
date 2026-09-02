@@ -4,6 +4,7 @@ import ogTelegramGeminiBot from "@/assets/og-telegram-gemini-bot.jpg";
 
 export type CaseStudy = {
   slug: string;
+  liveUrl?: string;
   name: string;
   tag: string;
   summary: string;
@@ -27,6 +28,72 @@ const OG_IMAGES: Record<string, string> = {
 };
 
 export const caseStudies: CaseStudy[] = [
+  {
+    slug: "mbr-motion-hub",
+    name: "MBR Motion Hub",
+    liveUrl: "https://tools.mukulmbr.in",
+    tag: "Spatial Telemetry Radar · 23 Studio Engines",
+    summary:
+      "A high-performance web suite of 23 browser-native multimedia engines — featuring real-time AI vocal isolation, 360° HRTF binaural 8D audio, 60 FPS canvas audiograms, 3D smartphone safe-zone simulation, and live GPS transit radar — executing 100% in client-side browser RAM with zero server compute costs.",
+    stack: ["React 18", "TypeScript", "WebAudio API", "HTML5 Canvas", "Tailwind CSS", "Vite", "Leaflet"],
+    role: "Creator & Lead Frontend Architect",
+    year: "2025 – 2026",
+    problem:
+      "Online media tools are notoriously bloated — locked behind aggressive paywalls, requiring account registrations, and forcing users to upload gigabytes of personal media to third-party cloud servers with high latency and privacy risks. Creators needed instant, zero-upload, private media tools executing directly on their device hardware.",
+    architecture: [
+      {
+        title: "Client-side WebAudio DSP pipeline",
+        body: "Real-time center-channel phase inversion and bandpass speech filtering (1400Hz Q=0.85) run directly in browser memory without sending a single byte to an external server. The dual-stem mixer processes 16-bit PCM stereo buffers on the fly and exports pristine WAV files in milliseconds.",
+      },
+      {
+        title: "360° HRTF binaural spatial engine",
+        body: "Constructed an orbital 3D audio radar using WebAudio PannerNode with HRTF panning in 3D coordinate space coupled with impulse response convolution reverb, tape warmth low-pass filtering, and an interactive 60 FPS orbital visualizer canvas.",
+      },
+      {
+        title: "60 FPS canvas recording pipeline",
+        body: "The Audiogram studio renders animated real-time audio waveforms (Equalizer, Radial Pulsar, Sine Ribbon) onto a high-DPI HTML5 canvas, capturing the stream via canvas.captureStream(60) and muxing with audio into MP4/WebM files using MediaRecorder.",
+      },
+      {
+        title: "Spatial GPS transit telemetry",
+        body: "Integrated interactive Leaflet maps with custom vehicle SVG telemetry, live route waypoints, speedometers, dynamic route ETA calculation, and live weather radar HUD.",
+      },
+    ],
+    decisions: [
+      {
+        title: "100% In-memory execution over backend workers",
+        body: "Rather than provisioning expensive cloud transcoding instances (e.g. AWS Lambda or FFmpeg workers), all audio/video manipulations run in client-side Web Workers and AudioWorklets. This dropped server operational costs to $0 while guaranteeing zero data leakage.",
+      },
+      {
+        title: "Deep-link query routing over heavy micro-frontends",
+        body: "All 23 engines share a centralized design system with single-click query param routing (/?tool=vocal-remover). Each tool dynamically updates document titles, meta descriptions, and canonical tags for instant social sharing and search indexing.",
+      },
+    ],
+    bottlenecks: [
+      {
+        title: "Real-time phase cancellation audio buffer latency",
+        body: "Manipulating raw float32 channel buffers initially caused audio glitching during slider dragging. Decoupled UI state from audio rendering via WebAudio GainNodes with exponential ramp transitions.",
+      },
+      {
+        title: "Canvas video capture frame stutter",
+        body: "High-resolution canvas recording dropped frames on mobile GPUs. Implemented requestAnimationFrame syncing with dynamic resolution scaling (1080x1920 for vertical reels, 1920x1080 for landscape).",
+      },
+    ],
+    ai: [
+      {
+        title: "Frequency resonance isolation & acoustic fingerprinting",
+        body: "Implemented client-side acoustic FFT analysis for frequency peaks, allowing instant identification of audio frequencies and separation of vocal vs instrumental harmonic signatures.",
+      },
+    ],
+    impact: [
+      "23 fully operational studio engines deployed globally on Cloudflare edge.",
+      "Over 1,000+ weekly requests with 82%+ edge cache hit ratio and 0 server compute bills.",
+      "100% client-side privacy: Zero user media files uploaded to any third-party server.",
+      "Direct live demo accessible at tools.mukulmbr.in.",
+    ],
+    accent: "from-emerald-500/30 to-teal-400/20",
+    ogImage: OG_IMAGES.emergent,
+  },
+
   {
     slug: "emergent",
     name: "Emergent",
