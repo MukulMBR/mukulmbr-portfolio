@@ -634,10 +634,10 @@ function Hero() {
                     <h3 className="text-lg font-extrabold text-white flex items-center gap-2">
                       MBR Motion Hub — Spatial Studio Sandbox
                       <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                        23 Engines Live
+                        28 Engines Live
                       </span>
                     </h3>
-                    <p className="text-xs text-slate-400">23 browser-native multimedia engines running 100% in client-side RAM with zero server compute.</p>
+                    <p className="text-xs text-slate-400">28 browser-native multimedia engines running 100% in client-side RAM with zero server compute.</p>
                   </div>
                 </div>
 
@@ -655,7 +655,7 @@ function Hero() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-950 bg-gradient-to-r from-emerald-400 to-teal-400 hover:from-emerald-300 hover:to-teal-300 px-4 py-2.5 rounded-xl shadow-lg shadow-emerald-500/20 transition-all scale-100 hover:scale-105 whitespace-nowrap"
                   >
-                    <span>Launch 23 Engines</span>
+                    <span>Launch 28 Engines</span>
                     <ArrowUpRight className="h-4 w-4" />
                   </a>
                 </div>

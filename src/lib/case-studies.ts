@@ -32,9 +32,9 @@ export const caseStudies: CaseStudy[] = [
     slug: "mbr-motion-hub",
     name: "MBR Motion Hub",
     liveUrl: "https://tools.mukulmbr.in",
-    tag: "Spatial Telemetry Radar · 23 Studio Engines",
+    tag: "Spatial Telemetry Radar · 28 Studio Engines",
     summary:
-      "A high-performance web suite of 23 browser-native multimedia engines — featuring real-time AI vocal isolation, 360° HRTF binaural 8D audio, 60 FPS canvas audiograms, 3D smartphone safe-zone simulation, and live GPS transit radar — executing 100% in client-side browser RAM with zero server compute costs.",
+      "A high-performance web suite of 28 browser-native multimedia engines — featuring real-time AI vocal isolation, 360° HRTF binaural 8D audio, 60 FPS canvas audiograms, 3D smartphone safe-zone simulation, and live GPS transit radar — executing 100% in client-side browser RAM with zero server compute costs.",
     stack: ["React 18", "TypeScript", "WebAudio API", "HTML5 Canvas", "Tailwind CSS", "Vite", "Leaflet"],
     role: "Creator & Lead Frontend Architect",
     year: "2025 – 2026",
@@ -85,7 +85,7 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     impact: [
-      "23 fully operational studio engines deployed globally on Cloudflare edge.",
+      "28 fully operational studio engines deployed globally on Cloudflare edge.",
       "Over 1,000+ weekly requests with 82%+ edge cache hit ratio and 0 server compute bills.",
       "100% client-side privacy: Zero user media files uploaded to any third-party server.",
       "Direct live demo accessible at tools.mukulmbr.in.",
