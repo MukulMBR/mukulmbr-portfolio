@@ -44,27 +44,27 @@ const OG_IMAGE = "https://storage.googleapis.com/gpt-engineer-file-uploads/kKBXK
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mukul — Frontend Developer | Angular, TypeScript, React" },
+      { title: "Mukul Bushi Reddy M — Web Engineering Architect | React, TypeScript, WebAudio & Spatial Systems" },
       {
         name: "description",
         content:
-          "Frontend Developer specializing in Angular, TypeScript, and modern web technologies. Passionate about transforming ideas into responsive and user-centric digital products.",
+          "Portfolio of Mukul Bushi Reddy M, building high-performance web engineering applications, 28 browser-native studio engines (MBR Motion Hub), WebAudio DSP, 3D spatial telemetry, and React architectures.",
       },
-      { property: "og:title", content: "Mukul — Frontend Developer | Angular, TypeScript, React" },
+      { property: "og:title", content: "Mukul Bushi Reddy M — Web Engineering Architect | React, TypeScript, WebAudio & Spatial Systems" },
       {
         property: "og:description",
         content:
-          "Frontend Developer specializing in Angular, TypeScript, and modern web technologies. Transforming ideas into responsive, user-centric digital products.",
+          "Portfolio of Mukul Bushi Reddy M, building high-performance web engineering applications, 28 browser-native studio engines (MBR Motion Hub), WebAudio DSP, 3D spatial telemetry, and React architectures.",
       },
       { property: "og:url", content: "https://mukulmbr.in/" },
       { property: "og:image", content: OG_IMAGE },
       { property: "og:image:alt", content: "Mukul — Frontend Developer Portfolio" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Mukul — Frontend Developer | Angular, TypeScript, React" },
+      { name: "twitter:title", content: "Mukul Bushi Reddy M — Web Engineering Architect | React, TypeScript, WebAudio & Spatial Systems" },
       {
         name: "twitter:description",
         content:
-          "Frontend Developer specializing in Angular, TypeScript, and modern web technologies. Transforming ideas into responsive, user-centric digital products.",
+          "Portfolio of Mukul Bushi Reddy M, building high-performance web engineering applications, 28 browser-native studio engines (MBR Motion Hub), WebAudio DSP, 3D spatial telemetry, and React architectures.",
       },
       { name: "twitter:image", content: OG_IMAGE },
     ],
